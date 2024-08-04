@@ -3,7 +3,7 @@
 {% block content %}
     <p class="p-2">Hola, este es tu primer sitio en Django</p>
     {% comment %}<a href={%url "pokedex:add_pokemon"%}> Crear Pokemon </a>
-     <ul class="list-group">
+    <ul class="list-group">
         {% for pokemon in pokemons %}
         <li class="list-group-item">
             <a href="pokemon/{{pokemon.pk}}">{{ pokemon | capfirst }}</a>
@@ -35,4 +35,3 @@
     </div>
 {% endblock content %}
 
-        
